@@ -1,0 +1,2 @@
+#Ignoring the file containing the login info for the database
+.env
