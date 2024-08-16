@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start">
+        <h1 id="head1">Welcome!</h1>
+        <h2>Log in or create a new user</h2>
+        
+        <button onclick="logInForm()" id="login">Log In</button>
+        <button id="register" onclick="registerForm()">Register</button>
+    </div>
+
+    <form id="logIn-form" onsubmit="logIn(event)">
+        <h1>Log In:</h1>
+        <label for="un">Username</label>
+        <input id="un" type="text" aria-label="username" placeholder="Username">
+        <label for="pwd">Password</label>
+        <input id="pwd" type="password" placeholder="password" aria-label="password"> 
+        <button type="submit">Log in</button>
+    </form>
+        
+    <form onsubmit="register(event)" id="register-form">
+        <h1>Create user:</h1>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Name" aria-label="enter your name">
+        <label for="email">E-Mail</label>
+        <input id="email" type="text" placeholder="E-Mail" aria-label="enter your e-mail">
+        <label for="pass">Select password:</label>
+        <input id="pass" type="password" name="password" placeholder="Select password" aria-label="select password">
+        <label for="rpas">Repeat password:</label>
+        <input id="rpass" type="password" name="repeat-password" placeholder="Repeat password" aria-label="repeat password">
+        <button type="submit">Register</button>
+    </form>
+    <h1 id="success">Head</h1>
+    <script src="script.js"></script>    
+</body>
+</html>
